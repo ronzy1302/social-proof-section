@@ -7,24 +7,24 @@
 body {
   font-family: "Spartan", sans-serif;
   position: relative;
+  background: url("./images/bg-pattern-top-desktop.svg") no-repeat top left,
+    url("./images/bg-pattern-bottom-desktop.svg") no-repeat bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: -95vh -15vh, 40vh;
 }
 
 main {
   width: 80%;
-  min-height: 100vh;
-  margin: auto;
+  margin: 5% auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-rows: 1fr 1fr;
   align-items: center;
-  background: url("./images/bg-pattern-top-desktop.svg"),
-    url("./images/bg-pattern-bottom-desktop.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
-  background-position: -125vh, 30vh;
 }
 
 .intro h1 {
-  width: 80%;
+  width: 85%;
   color: hsl(300, 43%, 22%);
   font-size: 40px;
 }
@@ -32,6 +32,9 @@ main {
 .intro P {
   color: hsl(303, 10%, 53%);
   margin-top: 10px;
+}
+.rating {
+  padding-left: 8rem;
 }
 
 .rating .rate1,
@@ -41,7 +44,7 @@ main {
   margin: 15px;
   border-radius: 8px;
   background-color: hsl(333, 80%, 95%);
-  padding: 12px 20px;
+  padding: 15px 25px;
   color: hsl(300, 43%, 22%);
   font-weight: 700;
   font-size: 15px;
@@ -74,8 +77,8 @@ i:nth-child(5) {
 .card {
   width: 100%;
   background-color: hsl(300, 43%, 22%);
-  padding: 10px;
-  border-radius: 20px;
+  padding: 30px;
+  border-radius: 5px;
 }
 
 .card2 {
@@ -173,6 +176,12 @@ h5 {
     flex-direction: column;
     text-align: center;
   }
+  .rating {
+    padding-left: 0px;
+    padding-right: 30px;
+    margin: auto;
+    width: 100%;
+  }
   .rating .rate1,
   .rate2,
   .rate3 {
@@ -183,9 +192,11 @@ h5 {
   }
   .buyers {
     display: block;
+    border: 1px solid black;
   }
   .card {
-    margin: 10px;
+    margin-top: 10px;
+    padding: 10px;
   }
   .head {
     flex-direction: column;
