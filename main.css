@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+}
+
+main {
+  width: 80%;
+  min-height: 100vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  border: 1px solid black;
+}
+
+.intro {
+  /* width: 100%; */
+  border: 1px solid black;
+}
+
+.intro h1 {
+  width: 70%;
+  color: hsl(300, 43%, 22%);
+  font-size: 40px;
+}
+
+.intro P {
+  color: hsl(303, 10%, 53%);
+  margin-top: 10px;
+}
+
+.rating {
+  /* width: 100%; */
+  border: 1px solid black;
+}
+
+.rate1,
+.rate2,
+.rate3 {
+  width: 80%;
+  margin: 10px;
+  display: flex;
+  border-radius: 8px;
+  background-color: hsl(333, 80%, 95%);
+  padding: 12px 20px;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+i {
+  color: orange;
+  letter-spacing: 5px;
+}
+
+i:nth-child(5) {
+  margin-right: 10px;
+}
+
+.rate2 {
+  margin-left: 50px;
+}
+
+.rate3 {
+  margin-left: 100px;
+}
+.buyers {
+  width: 100%;
+  display: flex;
+  border: 1px solid black;
+}
+
+.card {
+  margin: 10px;
+  background-color: hsl(300, 43%, 22%);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.card .head {
+  display: flex;
+  align-items: center;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.head img {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.name {
+  margin-left: 20px;
+}
+
+h4 {
+  color: white;
+}
+
+h5 {
+  color: hsl(333, 80%, 67%);
+  font-weight: 400;
+}
+
+.body {
+  color: white;
+  font-weight: 400;
+  line-height: 2;
+  font-size: 12px;
+}
